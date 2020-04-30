@@ -1,0 +1,12 @@
+[package]
+name = "bino"
+version = "0.1.0"
+authors = ["cyber"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+memmap            = "0.7"
+minifb            = "0.15"
+static_assertions = "1.1"
