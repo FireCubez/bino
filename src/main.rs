@@ -245,10 +245,10 @@ fn main() {
 		let a = memory.get_code(ip as usize);
 		let b = memory.get_code((ip + 8) as usize);
 		let c = memory.get_code((ip + 16) as usize);
-		eprintln!("DEBUG: ip = {:#X}", ip);
-		eprintln!("DEBUG: a = {:#X}", a);
-		eprintln!("DEBUG: b = {:#X}", b);
-		eprintln!("DEBUG: c = {:#X}", c);
+		//eprintln!("DEBUG: ip = {:#X}", ip);
+		//eprintln!("DEBUG: a = {:#X}", a);
+		//eprintln!("DEBUG: b = {:#X}", b);
+		//eprintln!("DEBUG: c = {:#X}", c);
 		if a == 0xFFFFFFFFFFFFFFFF {
 			let bytes = &memory.data()[b as usize..][..(c as usize)];
 			eprintln!("DEBUG BYTES: ({}) {:?}", c, bytes);
